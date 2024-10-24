@@ -8,7 +8,7 @@ load_dotenv()
 
 # Initialize Pinecone
 pc = Pinecone(api_key=os.getenv('PINECONE_API_KEY'))
-index_name = "pesuio-rag"  # Replace with your Pinecone index name
+index_name = "pesuio-naive-rag"  # Replace with your Pinecone index name
 index = pc.Index(index_name)
 
 # Jina API setup
@@ -26,7 +26,7 @@ def retrieve_nearest_chunks(query, top_k=5):
     # Embed the query using Jina API
     payload = {
         'input': query,
-        'model': 'jina-embeddings-v2-base-en'
+        'model': 'jina-embeddings-v3'
     }
     response = requests.post(url, json=payload, headers=headers)
     if response.status_code != 200:
@@ -65,7 +65,7 @@ Answer:"""
     return response.choices[0].message.content
 
 if __name__ == "__main__":
-    query = "What is the title of the report?"
+    query = "What is the command to stage my changes?"
     nearest_chunks = retrieve_nearest_chunks(query)
 
     context = "\n".join([chunk['metadata']['text'] for chunk in nearest_chunks])

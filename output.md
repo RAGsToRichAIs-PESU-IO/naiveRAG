@@ -4,9 +4,9 @@ Git is the open source distributed version control system that facilitates GitHu
 
 # Install
 
-- GitHub for Windows
-- GitHub for Mac
-- Git for All Platforms
+- GitHub for Windows: https://windows.github.com
+- GitHub for Mac: https://mac.github.com
+- Git for All Platforms: http://git-scm.com
 
 Git distributions for Linux and POSIX systems are available on the official Git SCM web site.
 
@@ -133,7 +133,7 @@ Merge ‘feature’ branch into ‘master’
 
 # Training
 
-Want to learn more about using GitHub and Git? Email the Training Team or visit our website for learning event schedules and private class availability.
+Want to learn more about using GitHub and Git? Email the Training Team or visit our web site for learning event schedules and private class availability.
 
 Email: services@github.com
 
