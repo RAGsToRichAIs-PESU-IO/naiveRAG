@@ -6,12 +6,13 @@ This comprehensive guide walks through building a complete Retrieval-Augmented G
 
 Before starting, ensure you have the following:
 
-1. Python 3.7 or later installed
-2. Required API keys:
+1. Python 3.1 or later installed
+2. Activate the conda environment
+3. Required API keys:
    - Jina AI API key
    - Pinecone API key
    - Groq API key
-3. A PDF document to process
+4. A PDF document to process
 
 ## Installation
 
