@@ -6,7 +6,7 @@ This comprehensive guide walks through building a complete Retrieval-Augmented G
 
 Before starting, ensure you have the following:
 
-1. Python 3.1 or later installed
+1. Python 3.11 or later installed
 2. Activate the conda environment
 3. Required API keys:
    - Jina AI API key
